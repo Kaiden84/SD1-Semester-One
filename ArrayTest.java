@@ -5,9 +5,9 @@ public class ArrayTest {
         int sum = 0;
         int[] numbers = new int[100];
 
-for (int i=0; i<100; i++) {
-    numbers [i] = i+1;
-}
+        for (int i=0; i<100; i++) {
+            numbers [i] = i+1;
+        }
 
         for (int i=0; i<numbers.length; i++) {
         System.out.print(numbers [i] + ":    ");
@@ -19,6 +19,5 @@ for (int i=0; i<100; i++) {
         sum=sum+numbers [i];
         }
         System.out.println("The Total is "+sum);
- 
     }
 }
