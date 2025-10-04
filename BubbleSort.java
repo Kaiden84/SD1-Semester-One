@@ -7,22 +7,20 @@
 
 public class BubbleSort {
 
-    public static int[] swapTwoArrayElements(int[] arrayToSwap, int lowerIndex){
+    public static int[] array = {84, 67, 97, 71, 73, 94, 9};
+    public static void main(String[] args) {
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
 
-            int temp;
-
-        temp=arrayToSwap[lowerIndex];
-
-        arrayToSwap[lowerIndex]=arrayToSwap[lowerIndex+1];
-
-        arrayToSwap[lowerIndex+1]=temp;
-
-        return arrayToSwap;
-
+            for (int j = 0; j < n - i - 1; j++) {
+                if (array[j] > array[j] + 1) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        System.out.println(array[i]);
+        }
     }
 
-    public static void main(String[] args){
-
-        int[] arrayToSort={1,3,4,5,1,23,57,126,4,543,345,23,12,45,67,97};
-    }
 }
