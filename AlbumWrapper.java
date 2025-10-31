@@ -1,3 +1,8 @@
+// Created for Semester 1 Java programming class
+// Kaiden Swift
+// Prints out Album Information
+// Used for testing Album Class
+
 public class AlbumWrapper {
  public static void main(String[] args) {
 
@@ -7,6 +12,7 @@ public class AlbumWrapper {
     Album album3 = new Album("Rain Dogs", "Tom Waits", 1985, 9, 30);
     Album album4 = new Album("Revolver", "The Beatles", 1966, 8, 5);
     Album album5 = new Album("Close To The Edge", "Yes", 1972, 9, 13);
+
         
     //Printing Albums
      System.out.println(album1);
@@ -15,5 +21,9 @@ public class AlbumWrapper {
      System.out.println(album4);
      System.out.println(album5);
 
+  // Playing Album
+  album1.playAlbum();
+  album1.breakAlbum();
+  album1.playAlbum();
    }
 }
