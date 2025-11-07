@@ -11,6 +11,7 @@ public class Album {
     int numberofSongs=0; //how many songs there are
     int Age;
     boolean isPlayable = true;
+    
 
     // Making a Behavior
     public boolean playAlbum(){
@@ -27,17 +28,26 @@ public class Album {
         isPlayable = false;
     }
 
-    public Album(String albumName, String artistName, int year, int month, int day){ //Input for release date
+    public Album(String albumName, String artistName, int year, int month, int day, int songs){ //Input for release date
         name=albumName; //assigns the name of the album to albumname.
         releaseYear=year; //assigns the release date
         releaseDay=day;
         releaseMonth=month;
         Artist=artistName; //Assigns artist
+        numberofSongs=songs;
         Age = 2025 - releaseYear;
     };
 
+    // I attempted to add a feature wherein "songs" changes to song when it is just one song, however it did not work
+    //if (numberofSongs=1) {
+   // String songPrint = " Song!";
+    //} else {
+   // String songPrint = " Songs!";
+   // }
+
     public String toString (){ //returns
         return name + " was written by " + Artist + " and released on " + releaseDay 
-        + "-" + releaseMonth + "-" + releaseYear + " Making it " + Age + " Years Old!";
+        + "-" + releaseMonth + "-" + releaseYear + " Making it " + Age + " Years Old!" 
+        + " It has " + numberofSongs + " Songs!";
     };    
 }
