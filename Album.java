@@ -2,7 +2,7 @@
 // Kaiden Swift
 // Sets up Album Syntax
 
-public class Album {
+public class Album implements Comparable <Album>{
     String name;// name of the record
     int releaseYear;//release date
     int releaseMonth;
@@ -45,9 +45,17 @@ public class Album {
    // String songPrint = " Songs!";
    // }
 
+    @Override
     public String toString (){ //returns
         return name + " was written by " + Artist + " and released on " + releaseDay 
         + "-" + releaseMonth + "-" + releaseYear + " Making it " + Age + " Years Old!" 
         + " It has " + numberofSongs + " Songs!";
+    }
+
+    public int compareTo(Album o) {
+        if (Artist.equals(o.Artist)){
+        return releaseYear - o.releaseYear;
+        }
+        return Artist.compareTo(o.Artist);
     };    
 }
