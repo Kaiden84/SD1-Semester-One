@@ -1,5 +1,7 @@
 //for programming semester 2, Created by Kaiden Swift for purpose of reading user input.
 
+import java.util.Scanner;
+
 public class playerInput {
     public static void main(String[] args) {
         Scanner scanThing = new Scanner(System.in);
@@ -10,19 +12,19 @@ public class playerInput {
         String playerName;
 
 //define player name as example of float
-        system.out.println("What is your Name?");
-        String playerName = scanThing.nextLine();
+        System.out.println("What is your Name?");
+        playerName = scanThing.nextLine();
 
 //define player age as example of int
-        system.out.println("How old are you?");
-        int playerAge = scanThing.nextLine();
+        System.out.println("How old are you?");
+        playerAge = scanThing.nextInt();
 
 //define player's favorite number
-        system.out.println("What is your Favorite Number?");
-        float playerNumber = scanThing.nextLine();
+        System.out.println("What is your Favorite Number?");
+        playerNumber = scanThing.nextFloat();
 
 //print player name, number, and age
-        system.out.println("Your name is " + playerName + " and you are " + playerAge + 
+        System.out.println("Your name is " + playerName + " and you are " + playerAge + 
         " Years old. Your favorite number is " + playerNumber);
     }
 }
