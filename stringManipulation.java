@@ -1,13 +1,19 @@
+// Written by Kaiden for Mr. Gross's Programming class
+
 import java.util.Scanner;
 
 public class stringManipulation {
 
     public static void main(String[] args) {
+
+        //defining scanner
         Scanner scanThingPartTwoCommaTheLongAwaitedSequelToscanThingPartOne = new Scanner(System.in);
 
+        //defining a string
         String testString="the quick Brown Fox Jumped over the lazy dog";
         String[] parts = testString.split(" ");
 
+        //assigning words to parts and printing them
         String playerWord;
 
         String word1 = parts[0];
@@ -30,6 +36,7 @@ public class stringManipulation {
         System.out.println(word8);
         System.out.println(word9);
 
+        // Make a new sentence for part two
         System.out.println("Enter a nine word long sentence, please put spaces in between each word");
         playerWord = scanThingPartTwoCommaTheLongAwaitedSequelToscanThingPartOne.nextLine();
 
